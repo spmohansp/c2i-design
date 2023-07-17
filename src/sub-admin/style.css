@@ -1,0 +1,50 @@
+.top-button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.create-button{
+    display: flex;
+    width: 120px;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    height: 41px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--primary);
+}
+
+.create-button:hover{
+    background: var(--primary) !important;
+}
+
+.top-button .search{
+    width: 210px !important;
+    height: 41px;
+    padding: 0;
+}
+.search:hover {
+    border-color:var(--primary) !important;
+}
+
+.search .ant-input-prefix{
+    font-size: 18px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-left: 5%;
+}
+.detail-card{
+    border-radius: 20px;
+    background: var(--card-cl, #E8F6FF);
+    margin: 2% 0 2% 2%;
+}

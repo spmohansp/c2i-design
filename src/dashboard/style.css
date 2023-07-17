@@ -1,0 +1,88 @@
+.card-count{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard-card{
+    display: flex;
+    height: 178px;
+    align-items: center;
+    gap: 64px;
+    flex: 1 0 0;
+    border-radius: 6px;
+    background: var(--light-background-paper, #FFF);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    margin: 2% 0 2% 2%;;
+}
+
+.dashboard-card .ant-card-body{
+    width: 100% !important;
+}
+
+.dashboard-card .title{
+    color: var(--heading);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.15px;
+}
+.dashboard-card .count{
+    color: var(--light-text-primary);
+    font-family: Lato;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 62.745% */
+}
+.dashboard-card svg{
+    float: right;
+    margin-top: 10%;
+    width: 80px;
+    height: 80px;
+}
+.meeting-importance{
+    height: 20px;
+    padding: 0px 6.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 64px;
+    background: var(--light-custom-background-success-background, linear-gradient(0deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.88) 100%), #4CAF50);
+}
+
+.calendar-schedule .title{
+    color: #3A3541;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.15px;
+}
+
+.meeting-table thead tr {
+    border-bottom: 3px solid #B0A6A6;
+}
+
+.meeting-table tbody tr td {
+    text-align: left;
+    border-bottom: 3px dashed #B0A6A6;
+}
+
+@media only screen and (max-width: 800px) {
+    .page-title-heading {
+        font-size: 18px;
+    }
+    .dashboard-card .count{
+        font-size: 40px;
+    }
+    .dashboard-card svg{
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .dashboard-card svg{
+        margin-top: 1%;
+    }
+}
