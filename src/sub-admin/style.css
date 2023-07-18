@@ -101,3 +101,22 @@
     text-align: center;
     align-items: center !important;
   }
+
+
+@media only screen and (max-width: 1000px) and  (min-width: 700px) {
+  .top-button .search {
+    width: 120px !important;
+  }
+  .top-button .create-button {
+    width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .top-button .search {
+    width: 120px !important;
+  }
+  .top-button .create-button {
+    width: 80px !important;
+  }
+}

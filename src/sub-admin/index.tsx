@@ -6,10 +6,10 @@ export const SubAdmin = () => {
   return (
     <div className="sub-admin">
       <Row gutter={24}>
-        <Col span={17}>
+        <Col span={17} sm={15}>
           <h1 className="page-title-heading">Sub Admin List</h1>
         </Col>
-        <Col span={7}>
+        <Col span={7} sm={9}>
           <div className="top-button">
             <Input
               className="search"
@@ -26,7 +26,7 @@ export const SubAdmin = () => {
       </Row>
       <Row gutter={24}>
         {[1, 2, 3, 4, 5, 6, 7, 8].map((data) => (
-          <Col span={12} xs={24} xl={12} sm={24} md={24} lg={24}>
+          <Col span={12} xs={24} xl={12} sm={24} md={24} lg={24} key={data}>
             <Card className="detail-card">
               <Row gutter={24}>
                 <Col span={6}>
