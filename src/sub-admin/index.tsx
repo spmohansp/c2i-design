@@ -34,12 +34,12 @@ export const SubAdmin = () => {
                     <span>A{data}</span>
                   </div>
                 </Col>
-                <Col span={18}>
+                <Col span={18} className="card-content-detail">
                   <div className="card-person-name">
                     <h3 className="name">Name{data}</h3>
                     <p className="status">Active</p>
                   </div>
-                  <p>abc@gmail.com</p>
+                  <p className="email">abc@gmail.com</p>
                   <div className="card-detail">
                     <h3 className="mobile">+911234567890</h3>
                     <p className="detail">Detail</p>

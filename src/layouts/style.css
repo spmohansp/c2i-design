@@ -1,0 +1,14 @@
+.logout{
+    float: right;
+}
+.logout .profile{
+    display: flex;
+    width: 10px !important;
+    height: 92px;
+    padding: 13px 33px 0px 992px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+}

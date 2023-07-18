@@ -44,6 +44,7 @@ body {
   font-size: 20px;
 }
 
+
 .side-bar ul  li { 
   width: 243px;
   padding: 10px 12px;
@@ -52,7 +53,7 @@ body {
   margin-bottom: 8% !important;
 }
 .side-bar ul > li > .ant-menu-title-content { 
-  color: var(--black) !important;
+  color: var(--white) !important;
   font-family: Lato;
   line-height: normal;
   font-style: normal;
@@ -93,49 +94,13 @@ input{
   border-radius: 8px;
   border: 1px solid #C2C2C2;
 }
-.card-logo span{
-  width: 100%;
-}
-.card-logo{
-  display: flex;
-  align-items: center;
-  margin-top: 30%;
-  background-color: var(--primary);
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  align-items: center !important;
-}
-.card-person-name{
-  justify-content: space-between;
-    display: flex;
-}
+
+
 .card-detail{
   justify-content: space-between;
   display: flex;
 }
-.card-person-name .name{
-  color: #0D5795;
-  /* subheading */
-  font-family: Lato;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.card-person-name .status{
-  color: var(--light-success-main, #56CA00);
-  text-align: center;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 20px; /* 142.857% */
-  letter-spacing: 0.14px;
-}
+
 
 .card-detail{
   justify-content: space-between;
@@ -160,3 +125,4 @@ input{
   cursor: pointer;
   text-decoration-line: underline;
  }
+

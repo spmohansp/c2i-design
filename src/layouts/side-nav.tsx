@@ -80,7 +80,7 @@ export const SideNavComponent: React.FC<SideNavComponentProps> = ({
           },
           {
             key: "7",
-            icon: <UploadOutlined />,
+            icon: <UserOutlined />,
             label: "Sub Admin",
           },
         ]}

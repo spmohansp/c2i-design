@@ -25,12 +25,11 @@ export const LayoutComponent = () => {
   }, []);
 
   const isMobile = width <= 768;
-  console.log(isMobile);
   return (
     <Layout style={{ minHeight: "100vh" }}>
       {!isMobile?<SideNavComponent setMenu={setMenu} />:null}
       <Layout>
-        <HeaderComponent />
+        <HeaderComponent isMobile={isMobile} />
         <Content
           style={{
             padding: 24,

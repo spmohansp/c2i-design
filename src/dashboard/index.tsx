@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "antd";
 import "./style.css";
-import { CalendarOutlined } from "@ant-design/icons";
+import { CalendarOutlined, MoreOutlined } from "@ant-design/icons";
 
 export const DashboardComponent = () => {
   return (
@@ -117,7 +117,10 @@ export const DashboardComponent = () => {
       <Row gutter={24} justify={"start"}>
         <Col span={24}>
           <Card className="calendar-schedule">
-            <h1 className="title">Calendar Schedule</h1>
+            <div className="calendar-schedule-title">
+              <h1 className="title">Calendar Schedule</h1>
+              <MoreOutlined size={50} />
+            </div>
             <table width={"100%"} className="meeting-table">
               <thead>
                 <tr>
@@ -129,31 +132,44 @@ export const DashboardComponent = () => {
               <tbody>
                 <tr>
                   <td>
-                    <h4>Meeting1</h4>
-                    <p>
-                      <CalendarOutlined
-                        style={{ fontSize: "16px", marginRight: "10px" }}
-                      />
-                      21 Jul | 08:20-10:30
-                    </p>
+                    <div className="table-title-row">
+                      <div className="calender-table-image">
+                        <img src="https://img.freepik.com/premium-photo/look-up-pine-trees-sky-winter-landscape-nature-background-low-angle-view-high-quality-photo_516328-134.jpg?w=2000" alt="" />
+                      </div>
+                      <div className="table-calender-title">
+                        <h4>Meeting1</h4>
+                        <p>
+                          <CalendarOutlined
+                            style={{ fontSize: "16px", marginRight: "10px" }}
+                          />
+                          21 Jul | 08:20-10:30
+                        </p>
+                      </div>
+                    </div>
                   </td>
-                  <td>a list of topics, action items, and activities you want to discuss during the meeting.</td>
-                  <td><span className="meeting-importance">High</span></td>
+                  <td className="calender-table-description">a list of topics, action items, and activities you want to discuss during the meeting.</td>
+                  <td className="calender-table-importance"><span className="meeting-importance">High</span></td>
 
                 </tr>
                 <tr>
-                  <td>
-                    <h4>Meeting2</h4>
-                    <p>
-                      <CalendarOutlined
-                        style={{ fontSize: "16px", marginRight: "10px" }}
-                      />
-                      21 Jul | 08:20-10:30
-                    </p>
+                <td>
+                    <div className="table-title-row">
+                      <div className="calender-table-image">
+                        <img src="https://img.freepik.com/premium-photo/look-up-pine-trees-sky-winter-landscape-nature-background-low-angle-view-high-quality-photo_516328-134.jpg?w=2000" alt="" />
+                      </div>
+                      <div className="table-calender-title">
+                        <h4>Meeting2</h4>
+                        <p>
+                          <CalendarOutlined
+                            style={{ fontSize: "16px", marginRight: "10px" }}
+                          />
+                          21 Jul | 08:20-10:30
+                        </p>
+                      </div>
+                    </div>
                   </td>
-                  <td>Topics, action items, and activities you want to discuss during the meeting.</td>
-                  <td><span className="meeting-importance">High</span></td>
-
+                  <td className="calender-table-description">Topics, action items, and activities you want to discuss during the meeting.</td>
+                  <td className="calender-table-importance"><span className="meeting-importance">High</span></td>
                 </tr>
               </tbody>
             </table>
